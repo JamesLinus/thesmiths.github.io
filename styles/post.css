@@ -1,0 +1,33 @@
+h1.post-title {
+  display:      block;
+  text-align:   center;
+  width:        100%;
+}
+
+p.post-meta {
+  color:        #414E79;
+  display:      block;
+  padding:      0 50px 0 0;
+  text-align:   right;
+  width:        100%;
+}
+
+
+div.post-cover {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+div.post-cover img {
+    bottom:     0;
+    margin:     auto;
+    position:   absolute;
+    top:        0;
+    width:      100%;
+}
+
+article.post-content {
+  padding: 25px 15px 10px 15px;
+  width: 100%;
+}
