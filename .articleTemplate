@@ -1,0 +1,14 @@
+---
+layout: post
+title:  @title@
+date:   @date@
+categories: TheSmiths # Feel free to add specific categories 
+cover: # Add an available picture; Example : /media/cover.png
+author: TheSmiths # Complete with your name
+---
+
+Article summary.
+
+<!--more-->
+
+Article detailed content.
