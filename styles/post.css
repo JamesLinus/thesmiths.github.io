@@ -3,31 +3,66 @@ h1.post-title {
   text-align:   center;
   width:        100%;
 }
-
-p.post-meta {
+.post-meta {
   color:        #414E79;
-  display:      block;
-  padding:      0 50px 0 0;
-  text-align:   right;
-  width:        100%;
+  font-variant: small-caps;
 }
 
+p.post-meta {
+  display:      block;
+  padding:      0;
+  text-align:   right;
+}
 
 div.post-cover {
-  height: 200px;
+  height: 300px;
   overflow: hidden;
   position: relative;
 }
 
 div.post-cover img {
-    bottom:     0;
-    margin:     auto;
-    position:   absolute;
-    top:        0;
-    width:      100%;
+  bottom:     0;
+  margin:     auto;
+  position:   absolute;
+  top:        0;
+  width:      100%;
 }
 
 article.post-content {
-  padding: 25px 15px 10px 15px;
-  width: 100%;
+  font-size: 1.2em;
+  text-align: justify;
+  padding: 25px 15px 80px 15px;
 }
+
+article.post-content, p.post-meta {
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 90%;
+}
+
+main {
+  overflow: hidden;
+}
+
+div.back > a, div.back > a:hover, div.back > a:visited {
+  color:            #D9D9D9;
+  font-size:        20px;
+  font-variant:     small-caps;
+  text-decoration:  none;
+}
+
+div.back > a > span.glyphicon {
+  margin:           -4px 10px 0 0;
+  vertical-align:   middle;
+}
+
+div.back > a:hover {
+  color:          #A9A9A9;
+}
+
+div.back {
+  margin:   -50px 0 0 -15px;
+  position: relative;
+}
+
+

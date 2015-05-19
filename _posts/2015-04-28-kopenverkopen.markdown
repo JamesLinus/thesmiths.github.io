@@ -8,10 +8,6 @@ cover: /media/article1.png
 We are working on the new application for KopenVerkopen.nl, the fastest growing online
 buying-community from the Netherlands.
 
-
-
-
-
-
+<!--more-->
 
 Lot of things in this article.

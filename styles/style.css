@@ -218,6 +218,7 @@ main {
     height: auto;
     font-family: 'Open Sans';
     font-weight: 200;
+    padding: 1%;
 }
 
 #content-container-eight {
@@ -289,77 +290,41 @@ main {
     letter-spacing: -1.5px;
 }
 
-
-#article-one {
-    height: auto;
-    width: 48%;
-    padding: 4%;
-    min-width: 20em;
-    
+div.articles {
+    margin: 50px 0;
 }
 
-#article-one p {
-    padding-top: 1em;
-    padding-bottom: 10%;
-    height: 8em;
+div.article {
+    height:         auto;
+    margin:         25px auto;
+    overflow:       hidden;
+    width:          60%;
 }
 
-#article-two p {
-    padding-top: 1em;
-    padding-bottom: 10%;
-    height: 8em;
+div.article > p {
+    text-align:     justify;
 }
 
-#article-two {
-    height: auto;
-    width: 48%;
-    padding: 4%;
-    min-width: 20em;
+div.article > .post-cover {
+    margin: 10px 0;
 }
 
-#article-one img {
-    width: 100%;
-    height: auto;
+div.article > a {
+    border:             2px solid #414E59;
+    color:              #414E59;
+    display:            block;
+    float:              right;
+    font-family:        Montserrat, Arial, sans-serif;
+    font-size:          1.1em;
+    font-weight:        600;
+    margin:             0;
+    padding:            1.5em;
+    text-decoration:    none;
+    text-transform:     uppercase;
 }
 
-#article-two img {
-    width: 100%;
-    height: auto;
-}
-
-#article-one a {
-    background-color: none;
-    border: 2px solid #414E59;
-    padding: 1.5em;
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #414E59;
-    text-decoration: none;
-    font-size: 1.1em;
-    
-}
-
-#article-one a:hover {
-    background-color: rgba(0,0,0, 0.1);
-    border: 2px solid #414E59;
-}
-
-#article-two a {
-    background-color: none;
-    border: 2px solid #414E59;
-    padding: 1.5em;
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #414E59;
-    text-decoration: none;
-    font-size: 1.1em;
-}
-
-#article-two a:hover {
-    background-color: rgba(0,0,0, 0.1);
-    border: 2px solid #414E59;
+div.article > a:hover {
+    background-color:   #E4E4E4;
 }
 
 .showing {
