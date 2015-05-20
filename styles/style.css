@@ -91,6 +91,12 @@ main {
     font-weight: 400;
 }
 
+#content-container-one img {
+    display: inline;
+    height: 9em;
+    margin: -1em 0 0 0;
+}
+
 
 #content-container-two {
     font-family: 'Open Sans';

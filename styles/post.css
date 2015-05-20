@@ -4,8 +4,8 @@ h1.post-title {
   width:        100%;
 }
 .post-meta {
-  color:        #414E79;
-  font-variant: small-caps;
+  color:            #333333;
+  text-transform:   uppercase;
 }
 
 p.post-meta {
@@ -15,14 +15,19 @@ p.post-meta {
 }
 
 div.post-cover {
+  background: red;
   height: 300px;
+  margin: 25px auto;
+  max-width: 1024px;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 div.post-cover img {
   bottom:     0;
   margin:     auto;
+  max-width:  1024px;
   position:   absolute;
   top:        0;
   width:      100%;
@@ -31,7 +36,7 @@ div.post-cover img {
 article.post-content {
   font-size: 1.2em;
   text-align: justify;
-  padding: 25px 15px 80px 15px;
+  padding: 50px 15px 80px 15px;
 }
 
 article.post-content, p.post-meta {
@@ -47,12 +52,12 @@ main {
 div.back > a, div.back > a:hover, div.back > a:visited {
   color:            #D9D9D9;
   font-size:        20px;
-  font-variant:     small-caps;
+  text-transform:   uppercase;
   text-decoration:  none;
 }
 
 div.back > a > span.glyphicon {
-  margin:           -4px 10px 0 0;
+  margin:           -7px 10px 0 0;
   vertical-align:   middle;
 }
 
@@ -61,7 +66,7 @@ div.back > a:hover {
 }
 
 div.back {
-  margin:   -50px 0 0 -15px;
+  margin:   -75px 0 50px -15px;
   position: relative;
 }
 
