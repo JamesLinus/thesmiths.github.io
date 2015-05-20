@@ -1,26 +1,26 @@
+<footer class="container-fluid">
 <div class="row">
-  <div class="col-md-12">
-    <div id="content-container-eight">
-      <div class="col-md-6">
-        <div id="information-down">
-          <h1>Information</h1>
-          <p>The Smiths<br/>Herengracht 182, Amsterdam<br/>The Netherlands<br/><a
-            href="mailto:wearesmiths.com">info@wearesmiths.com</a></p>
-        </div>
-      </div>
+  <div class="col-md-6 large-row">
+      <h2>Information</h2>
+      <p>The Smiths<br/>Herengracht 182, Amsterdam<br/>The Netherlands<br/><a
+        href="mailto:wearesmiths.com">info@wearesmiths.com</a></p>
+  </div>
 
-      <div class="col-md-6">
-        <div id="contact-down">
-          <h1>Contact</h1>
-          <form id="#contact">
-            <input type="text" name="firstname" placeholder="Name" id="name-input">
-            <input type="text" name="lastname" placeholder="E-mail"  id="mail-input">
-            <textarea rows="4" cols="50" name="comment" placeholder="Write your
-              message here."></textarea>
-            <input type="submit" value="Send!" id="submit-down">
-          </form>
+  <div class="col-md-6 large-row">
+      <h2>Contact</h2>
+      <form id="contact">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="email" placeholder="E-mail">
+        <textarea rows="4" cols="50" name="comment" placeholder="Write your message here."></textarea>
+        <div id="contact-loader-box">
+          <div id="contact-loader">
+            <span class="glyphicon glyphicon-envelope"></span> 
+          </div>
         </div>
-      </div>
+        <input type="submit" value="Send!" id="send">
+        <p id="contact-message" style="color: white;"></p>
+      </form>
     </div>
   </div>
 </div>
+</footer>

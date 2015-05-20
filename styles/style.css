@@ -540,5 +540,26 @@ form {
         
     }
 
+#contact-loader-box {
+    color: #FFFFFF;
+    display: inline-block;
+    line-height: 30px;
+    margin-top: 40px;
+    height: 30px;
+    font-size: 30px;
+    width: 90%;
+}
+
+#contact-loader {
+    position: relative;
+    display: none;
+}
+
+#submit-down {
+    position: relative;
+    display: block;
+    margin-top: -50px;
+}
+
 
   

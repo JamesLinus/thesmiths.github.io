@@ -1,0 +1,224 @@
+---
+---
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400)
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900)
+
+$darkblue:          #414E59
+$bluegrey:          #646C74
+$transpwhite:       rgba(255,255,255,0.5)
+$lightgrey:         #E3E3E3
+$black:             #404040
+$white:             #FFFFFF
+
+$title-family:      Montserrat, Arial, sans-serif
+$content-family:    'Open Sans', Helvetica, Arial, sans-serif    
+
+$dim-smallRow:      10em
+$dim-mediumRow:     25em
+
+/* -------- HEADER -------- */
+header.default
+    background:         url(/media/teamWorking.jpg) no-repeat center center
+    background-size:    cover
+    height:             100vh
+    line-height:        100vh
+    opacity:            0.8
+    text-align:         center
+    width:              100%
+
+header .logo > img
+    display:            inline-block
+    height:             80vh
+    width:              50%
+
+
+/* -------- GENERAL -------- */
+body
+    font-family:        $content-family
+    height:             100%
+    width:              100%
+
+h1, h2, h3
+    font-family:        $title-family
+    letter-spacing:     -0.05em
+    margin:             0
+    text-transform:     uppercase
+
+div.small-row, div.medium-row, div.large-row
+    padding:            0
+
+    div, h1
+        height:         inherit 
+        width:          100%
+
+    h1
+        font-weight:    800
+
+    h2, h3
+        font-weight:    600
+        padding:        0 2vw 0.2em 2vw
+        
+    p
+        font-weight:    200
+        max-width:      50em
+        padding:        0 2vw
+
+div.small-row
+    height:             $dim-smallRow
+
+    h1
+        font-size:      0.5 * $dim-smallRow
+        line-height:    2em
+
+    h3
+        font-size:      0.1 * $dim-mediumRow 
+        line-height:    4em
+
+div.medium-row
+    height:             $dim-mediumRow
+
+div.medium-row, div.large-row
+    h2
+        font-size:      0.1 * $dim-mediumRow
+
+a.client 
+    background:         $white
+    border-radius:      25%
+    display:            inline-block
+    margin:             5em 1em
+    padding:            2em 5em
+
+article.article-excerpt
+    display:            inline-block
+    margin:             1em 2em
+    text-align:         justify
+    vertical-align:     top
+    width:              30em
+
+    div.img-wrapper
+        height:         15em
+        margin:         0.5em 0
+        width:          100%  
+        
+    h4
+        font-size:      2em
+
+    a.more
+        border:         2px solid $darkblue
+        color:          $darkblue
+        display:        block
+        float:          right
+        font-family:    $title-family
+        font-size:      1.1em
+        padding:        1.5em
+        text-transform: uppercase
+
+    a.more, a.more:visited, a.more:hover
+        text-decoration: none
+
+    a.more:hover
+        background:     $lightgrey
+
+footer 
+    background:         url(/media/underback.png) no-repeat center center
+    background-size:    cover
+    color:              $white
+    margin:             3em 0 0 0
+    padding:            2em 0
+
+    .large-row p
+        font-size:      1.5em
+        padding:        0
+
+    input, textarea
+        background:     none
+        border:         5px solid $transpwhite
+        padding:        1em
+        margin:         1em 0
+        width:          100%
+
+    input
+        box-sizing:     border-box
+        width:          45%
+
+    input:nth-child(2n)
+        float:          right
+
+    .large-row h2
+        
+        padding:        0 0 0.2em 0
+
+    div
+        padding:        0 2vw 0 2vw
+    
+    input#send
+        background:     $transpwhite
+        display:        block
+        margin:         0 auto
+        text-transform: uppercase
+
+/* -------- CORRECTIONS RESPONSIVE --------- */ 
+@media screen and (max-width: 992px) 
+    article.article-excerpt
+        height:         auto
+        margin:         2em 0
+        width:          100%
+
+    div.small-row, div.medium-row
+        height:         auto
+    
+    div.small-row
+        min-height:     $dim-smallRow
+
+    div.medium-row      
+        min-height:     $dim-mediumRow
+
+        div.text-vertical-center
+            height:     $dim-mediumRow
+
+@media screen and (max-width: 640px)
+    div.small-row h1 
+        font-size:      0.3 * $dim-smallRow 
+
+
+/* -------- HELPERS --------*/
+.bg-darkblue
+    background:         $darkblue
+    color:              $white
+
+.bg-bluegrey
+    background:         $bluegrey
+    color:              $white
+
+.bg-lightgrey
+    background:         $lightgrey
+    color:              $black
+
+.text-vertical-center
+    display:            table 
+
+    > div 
+        display:        table-cell
+        vertical-align: middle
+
+.img-wrapper
+    overflow:           hidden
+    position:           relative
+    text-align:         left
+
+    img
+        bottom:         0
+        margin:         auto
+        min-height:     100% 
+        position:       absolute
+        top:            0
+        min-width:      100% 
+        max-width:      125%
+
+.text-meta
+    font-size:          0.9em
+    text-transform:     uppercase
+
+@import _reset

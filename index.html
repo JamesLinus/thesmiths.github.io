@@ -1,111 +1,105 @@
 ---
 layout: default
 ---
-<div class="row">
-  <div class="col-xs-12 col-sm-8 column-two">
-        <div class="content-container">
-            <div id="content-container-two">                
-                <h1>Who we are?</h1>
-                <p>
-                
-                We are The Smiths, the #1 supplier of Titanium Developers in the world. Have a
-                look at our work and get inspired. We know how to fully leverage the power of
-                Appcelerator Titanium. Where others stop we move forward. 
-                
-                <br/> <br/>
-                
-                Molding a great app with Appcelerator Titanium can be highly cost effective in
-                bulding and maintenance. But only when the right craftsmen are at play. We are those
-                craftsmen.
-                
-                </p>
-            </div>
-        </div>
+<main class="container-fluid">
+<section class="row">
+<div class="col-sm-8 bg-lightgrey medium-row">
+  <div class="text-vertical-center">
+    <div>
+      <h2>Who we are?</h2> 
+      <p>
+      We are The Smiths, the #1 supplier of Titanium Developers in the world. Have a
+      look at our work and get inspired. We know how to fully leverage the power of
+      Appcelerator Titanium. Where others stop we move forward. 
+
+      <br/> <br/>
+
+      Molding a great app with Appcelerator Titanium can be highly cost effective in
+      bulding and maintenance. But only when the right craftsmen are at play. We are those
+      craftsmen.
+      </p>
     </div>
-    
-    <div class="col-xs-6 col-sm-4">
-        <div class="content-container">
-            <div id="content-container-three"></div>
-        </div>
-    </div>
+  </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4 column-three">
-        <div class="content-container">
-            <div id="content-container-four">
-                <h1>What we do</h1>
-                <p>
-                  We build the apps you want to make, but don't know how. Beautiful,
-                  well-structured, long-lasting mobile apps which will blow your mind. We have the
-                  best Titanium developers in the world, ready to start for you. What are you
-                  waiting for?
-                </p>       
-            </div>
-        </div>
-    </div>
+<div class="col-sm-4 hidden-xs medium-row img-wrapper">
+  <img src="/media/coding.png" alt="Coding Session" />
+</div>
+</section>
 
-    <div class="col-md-8">
-        <div class="content-container">
-            <div id="content-container-five"></div>
-        </div>
+<section class="row">
+<div class="col-md-4 medium-row">
+  <div class="text-vertical-center">
+    <div>
+      <h2>What we do</h2>
+      <p>
+      We build the apps you want to make, but don't know how. Beautiful,
+      well-structured, long-lasting mobile apps which will blow your mind. We have the
+      best Titanium developers in the world, ready to start for you. What are you
+      waiting for?
+      </p>       
     </div>
+  </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4 column-four">
-        <div class="content-container">
-            <div id="content-container-six">
-                <h1>Our Clients</h1>
-                <p>
-                    A few of our customers which we made happy with an app we built for them. Maybe
-                    you recognize some or you use them yourself. It all started with ideas. Our job
-                    is to make the dream come alive.
-                </p>                 
-            </div>
-        </div>
+<div class="col-md-8 medium-row img-wrapper">
+  <img src="/media/ui.jpg" alt"User Interface"/>
+</div>
+</section>
+
+<section class="row">
+<div class="col-md-4 medium-row bg-bluegrey">
+  <div class="text-vertical-center">
+    <div>
+      <h2>Our Clients</h2>
+      <p>
+      A few of our customers which we made happy with an app we built for them. Maybe
+      you recognize some or you use them yourself. It all started with ideas. Our job
+      is to make the dream come alive.
+      </p>                 
     </div>
-    
-    <div class="col-md-8">
-        <div class="content-container">
-            <div class="imagesrow">
-                <div class="showing">
-                    <a href="http://www.kopenverkopen.nl"><div id="img-three"></div></a>
-                    <a href="http://www.penton.com"><div id="img-five"></div></a>
-                    <!--a href="http://www.skoften.net"><div id="img-four"></div></a-->
-                </div>
-            </div>
-        </div>
-    </div>
+  </div>
 </div>
 
-<div class="row">
-    <div class="content-container">
-        <div id="content-container-seven">
-            <h1>Articles</h1>
-            <div class="articles">
-                {% for post in site.posts limit: 6 %}
-                <div class="col-md-6">
-                        <div class="article clearfix">
-                            <span class="post-meta">
-                                {% if post.author %} {{ post.author }} - {% endif %}
-                                {{ post.date | date_to_string  }}
-                            </span>
-                            <h2>{{ post.title }}</h2>
-                            {% if post.cover %} 
-                                <div class="post-cover">
-                                    <a href="{{ post.url }}"> 
-                                        <img src="{{post.cover}}" alt="{{post.title}}" /> 
-                                    </a>
-                                </div>
-                            {% endif %}
-                            {{ post.excerpt }}
-                            <a href="{{ post.url }}">Read more</a>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </div> 
+<div class="col-md-8 medium-row bg-bluegrey">
+  <div class="text-vertical-center">
+    <div class="text-center">
+      <a class="client" href="http://www.kopenverkopen.nl">
+        <img src="/media/app1.png" alt="KopenVerkopen" />
+      </a>
+
+      <a class="client" href="http://www.penton.com">
+        <img src="/media/app2.png" alt="Penton" />
+      </a>
+      <!--a href="http://www.skoften.net"><div id="img-four"></div></a-->
     </div>
+  </div>
 </div>
-                
+</section>
+
+<section class="row">
+<div class="col-md-12 small-row">
+  <h3>Articles</h3>
+</div>
+<div class="col-md-12 articles text-center">
+  {% for post in site.posts limit: 6 %}
+  <article class="article-excerpt"> 
+  <span class="text-meta">
+    {% if post.author %} {{ post.author }} - {% endif %}
+    {{ post.date | date_to_string  }}
+  </span>
+  <h4>{{ post.title }}</h4>
+  {% if post.cover %} 
+  <div class="img-wrapper">
+    <a href="{{ post.url }}"> 
+      <img src="{{post.cover}}" alt="{{post.title}}" /> 
+    </a>
+  </div>
+  {% endif %}
+  {{ post.excerpt }}
+  <a class="more" href="{{ post.url }}">Read more</a>
+  </article>
+  {% endfor %}
+</div>
+</section>
+</main> 
