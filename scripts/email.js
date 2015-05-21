@@ -11,19 +11,13 @@ $(document).ready(function () {
             comment: $('textarea[name="comment"]').val()
         };
 
-        setTimeout(function (msg) {
-                $("#contact-message").html(msg).addClass("error"); 
-                $("#send").attr('disabled', false);
-        }, 800, "An error occured");
-
-        return;
         Parse.Cloud.run("sendEmail", data, {
             success: function (msg) {
-                $("#contact-message").html(msg).addClass("success").fadeIn('fast'); 
+                $("#contact-message").html(msg).addClass("success");
                 $("#send").attr('disabled', false);
             }, 
             error: function (msg) {
-                $("#contact-message").html(msg).addClass("error").fadeIn('fast'); 
+                $("#contact-message").html(msg).addClass("error");
                 $("#send").attr('disabled', false);
             }
         });
