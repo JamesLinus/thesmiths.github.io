@@ -16,3 +16,9 @@ markdown: kramdown
 sass:
     sass_dir: _sass
 permalink: /:year-:month-:day/:title
+
+# Analytics
+analytics :
+  provider : google 
+    google : 
+        tracking_id : 'iUA-11557232-9'
