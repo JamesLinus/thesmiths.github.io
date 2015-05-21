@@ -3,7 +3,7 @@ layout: post
 title: "Gotcha: Case sensitivity difference in simulator and device"
 date:   2014-01-15 16:00:00
 categories: TheSmiths # Feel free to add specific categories 
-cover: # Add an available picture; Example : /media/cover.png
+cover: /media/articles/case-sensitive/cover.jpg 
 author: Wienke Giezeman 
 repost: tidev
 repost_link: http://www.tidev.io/2014/01/15/gotcha-case-sensitivity-difference-in-simulator-and-device/
