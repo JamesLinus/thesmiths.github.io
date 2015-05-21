@@ -11,4 +11,17 @@ $(function() {
       }
     }
   });
+
+  /* Display a little headline after scrolling */
+  $(window).scroll(function (e) {
+    var visiblePosition = $(window).scrollTop() + $(window).height(),
+        triggerPosition = $('#headline').offset().top + $('#headline').outerHeight();
+
+    if (triggerPosition < visiblePosition && !$('#headline').attr('displayed')) {
+        $('#headline')
+            .attr('displayed', true)
+            .animate({'margin-top': "-=5vh", 'opacity': 1}, 1000); 
+    }
+  })
+
 });
