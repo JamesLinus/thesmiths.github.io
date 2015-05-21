@@ -4,7 +4,8 @@ title:  Debug memory leaks with XCode Instruments
 date:   2014-01-31 16:00:00
 categories: TheSmiths Debug# Feel free to add specific categories 
 cover: /media/articles/debug-memory-leaks/cover.png
-repost: http://www.tidev.io/2014/01/31/debug-memory-leaks-with-xcode-instruments/ 
+repost: tidev
+repost_link: http://www.tidev.io/2014/01/31/debug-memory-leaks-with-xcode-instruments/ 
 author: Wienke Giezeman 
 ---
 

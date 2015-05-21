@@ -6,7 +6,7 @@
     <article class="article-full">
     {% if page.cover %}
     <div class="cover img-wrapper">
-        <img src="{{page.cover}}" alt="{{page.title}}" />
+      <img src="{{page.cover}}" alt="{{page.title}}" />
     </div>
     {% endif %}
     <h1 class="post-title">{{ page.title }}</h1>
@@ -19,6 +19,14 @@
         <span class="glyphicon glyphicon-chevron-left"></span>home
       </a>
     </div>
+
+    {% if page.repost %}
+    <div class="text-center">
+      This article was initially published on <a href="{{page.repost_link}}">{{page.repost}}</a>.
+      <br/><br/>
+    </div>
+    {% endif %}
+
     {{ content }}
     </article>
     {% include footer.html %}
