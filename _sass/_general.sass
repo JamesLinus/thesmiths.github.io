@@ -1,0 +1,73 @@
+/* -------- GENERAL -------- */
+body
+    font-family:        $content-family
+    height:             100%
+    width:              100%
+
+h1, h2, h3
+    font-family:        $title-family
+    letter-spacing:     -0.05em
+    margin:             0
+    text-transform:     uppercase
+
+div.small-row, div.medium-row
+    padding:            0
+
+    div, h1
+        height:         inherit 
+        width:          100%
+
+    h1
+        font-weight:    800
+
+    h2, h3
+        font-weight:    600
+        padding:        0 2vw 0.2em 2vw
+        
+    p
+        font-weight:    200
+        max-width:      50em
+        padding:        0 2vw
+
+div.small-row
+    height:             $dim-smallRow
+
+    h1
+        font-size:      0.5 * $dim-smallRow
+        line-height:    $dim-smallRow / (0.5 * $dim-smallRow)
+
+    h3
+        font-size:      0.1 * $dim-mediumRow 
+        line-height:    $dim-smallRow / (0.1 * $dim-mediumRow)
+
+div.medium-row
+    height:             $dim-mediumRow
+
+    h2
+        font-size:      0.1 * $dim-mediumRow
+
+a.client 
+    background:         $white
+    border-radius:      25%
+    display:            inline-block
+    margin:             5em 1em
+    padding:            2em 5em
+
+/* -------- CORRECTIONS RESPONSIVE --------- */ 
+@media screen and (max-width: 992px) 
+    div.small-row, div.medium-row
+        height:         auto
+    
+    div.small-row
+        min-height:     $dim-smallRow
+
+    div.medium-row      
+        min-height:     $dim-mediumRow
+
+        div.text-vertical-center
+            height:     $dim-mediumRow
+
+@media screen and (max-width: 640px)
+    div.small-row h1 
+        font-size:      0.3 * $dim-smallRow 
+        line-height:    $dim-smallRow / (0.3 * $dim-smallRow)
