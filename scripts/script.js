@@ -20,7 +20,8 @@ $(function() {
     if (triggerPosition < visiblePosition && !$('#headline').attr('displayed')) {
         $('#headline')
             .attr('displayed', true)
-            .animate({'margin-top': "-=5vh", 'opacity': 1}, 1000); 
+            .animate({'margin-top': "-=5vh", 'opacity': 1}, 1000);
+            ga('send', 'sub_title_shown');
     }
   })
 
