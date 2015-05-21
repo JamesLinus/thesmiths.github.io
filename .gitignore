@@ -3,3 +3,4 @@ _site
 temp/
 emailer/
 *.swp
+.DS_Store
