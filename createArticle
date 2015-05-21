@@ -7,15 +7,21 @@ var fs = require('fs'),
 
 /* Get the article name */
 var title = process.argv[2];
-if (!title || title.match(/\w+/) === null) {
+if (!title || title.match(/[- \w]+/) === null) {
     process.stdout.write("\033[31;40mError: Invalid article's title.\033[m\n");
     process.exit(1);
 }
 
 /* Get date info */
-var date = new Date(),
+var date,
     dateStamp,
     hourStamp;
+
+if (process.argv[3]) {
+    date = new Date(process.argv[3])
+} else {
+    date = new Date()
+}
 
 (function (dateStr) {
     dateStamp = dateStr[0];
@@ -23,7 +29,7 @@ var date = new Date(),
 })(date.toJSON().split('T'));
 
 /* Ensure that the article doesn't exist */
-var filename = path.join(POSTS_PATH, dateStamp + "-" + title + ".markdown");
+var filename = path.join(POSTS_PATH, dateStamp + "-" + title.replace(/ /g, "_").toLowerCase() + ".markdown");
 fs.readdir(POSTS_PATH, function (err, files) {
     if (err) { process.stdout.write(err); process.exit(1); }
 
