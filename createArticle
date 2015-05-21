@@ -29,7 +29,7 @@ if (process.argv[3]) {
 })(date.toJSON().split('T'));
 
 /* Ensure that the article doesn't exist */
-var filename = path.join(POSTS_PATH, dateStamp + "-" + title.replace(" ", "_").toLowerCase() + ".markdown");
+var filename = path.join(POSTS_PATH, dateStamp + "-" + title.replace(/ /g, "_").toLowerCase() + ".markdown");
 fs.readdir(POSTS_PATH, function (err, files) {
     if (err) { process.stdout.write(err); process.exit(1); }
 
