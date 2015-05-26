@@ -13,11 +13,11 @@ $(document).ready(function () {
 
         Parse.Cloud.run("sendEmail", data, {
             success: function (msg) {
-                $("#contact-message").html(msg).addClass("success");
+                $("#contact-message").html(msg).attr("class", "success");
                 $("#send").attr('disabled', false);
             }, 
             error: function (msg) {
-                $("#contact-message").html(msg).addClass("error");
+                $("#contact-message").html(msg).attr("class", "error");
                 $("#send").attr('disabled', false);
             }
         });

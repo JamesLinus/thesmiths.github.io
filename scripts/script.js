@@ -21,8 +21,9 @@ $(function() {
         $('#headline')
             .attr('displayed', true)
             .animate({'margin-top': "-=5vh", 'opacity': 1}, 1000);
+
             ga('send', 'sub_title_shown');
     }
-  })
+  });
 
 });
