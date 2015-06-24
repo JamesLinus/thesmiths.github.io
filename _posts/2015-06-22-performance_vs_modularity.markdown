@@ -48,15 +48,15 @@ Therefore, what we are measuring is the deviation from this reference, weighted 
 widgets to require / create. 
 
 ### Results
-Results are quite interesting and encouraging. For each device, the time of a creation is under
+Results are quite interesting and encouraging. For each device, the instantiation time is under
 `1ms` and under `350us` for most of them (R.I.P iPhone 4...). Also, the more widgets are required,
-the less it takes to require 1 widget. However, this seems not to be relevant enough and it's probably due
+the less it takes to require one of them. However, this seems not to be relevant enough and it's probably due
 to the fact that every widget is composed of the same Label element. Titanium or the device itself
 might be able to process some sort of cache to speed up the view creation.
 
 Also, nesting widget seems to slow a bit the require time for any device. However.. Except for the
-Archos which is definitly not a great warrior in this battle, the additonal time bringed this way
-might be neglected. 
+Archos which is definitly not a great warrior in this battle, the additonal time brought this way
+might be ignored. 
 
 Here are the results, (measure unit are micro seconds per widget):
 
