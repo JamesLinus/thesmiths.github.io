@@ -70,7 +70,7 @@ iPhone 4      | 776           | 946             | 962               | 937
 
 ### Bilan
 Those benchmarks (what a huge word for some measures of time) comfort us in the idea that the
-readability and the high level of maintainability bring by a modular conception does not impact the
-performance that much. For an requiring about 50 differents widgets, the overall cost bring by those
+readability and the high level of maintainability bring by a modular conception do not impact the
+performance that much. When requiring about 50 differents widgets, the overall cost bring by those
 calls is less than `50ms` and could be easily done on start-up. Component-driven development for
 mobile application sounds even more promising. 
