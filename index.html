@@ -6,16 +6,16 @@ layout: default
 <div class="col-sm-8 bg-lightgrey medium-row">
   <div class="text-vertical-center">
     <div>
-      <h2>Who we are</h2> 
+      <h2>Who we are</h2>
       <p>
-      We are The Smiths, the #1 supplier of Titanium Developers in the world. Have a
-      look at our work and get inspired. We know how to fully leverage the power of
-      Appcelerator Titanium. Where others stop we move forward. 
+      We are The Smiths, supplier of Titanium development. Have a
+      look at our work. We know how to fully leverage the power of
+      Appcelerator Titanium. Where others stop we move forward.
 
       <br/> <br/>
 
       Molding a great app with Appcelerator Titanium can be highly cost effective in
-      bulding and maintenance. But only when the right craftsmen are at play. We are those
+      creation and maintenance. But only when the right craftsmen are at play. We are those
       craftsmen.
       </p>
     </div>
@@ -35,8 +35,8 @@ layout: default
       <p>
       We specialize in Appcelerator Titanium development. We help with getting your project started or get it back on track. We also develop native modules to make full use of the native API and available native components. We also provide consultancy services for work flow setup to optimize your development process with Appcelerator Titanium.
 
-      Alingned with Appcelerator Titanium we promote open source. We develop open source components to be used freely and encourage our customers to do the same. 
-      </p>       
+      We promote open source. We develop open source components to be used freely and encourage our customers to do the same.
+      </p>
     </div>
   </div>
 </div>
@@ -53,7 +53,7 @@ layout: default
       <h2>Our Clients</h2>
       <p>
       A selection of the work we did.
-      </p>                 
+      </p>
     </div>
   </div>
 </div>
@@ -79,20 +79,20 @@ layout: default
   <h3>OUR THOUGHTS</h3>
     <!--p>
       We share the lessons we have learned, open source code we have published and work we have done.
-    </p-->       
+    </p-->
 </div>
 <div class="col-md-12 articles text-center" id="articles">
   {% for post in site.posts limit: 3 %}
-  <article class="article-excerpt"> 
+  <article class="article-excerpt">
   <span class="text-meta">
     {% if post.author %} {{ post.author }} - {% endif %}
     {{ post.date | date_to_string  }}
   </span>
   <h4>{{ post.title }}</h4>
-  {% if post.cover %} 
+  {% if post.cover %}
   <div class="img-wrapper">
-    <a href="{{ post.url }}"> 
-      <img src="{{post.cover}}" alt="{{post.title}}" /> 
+    <a href="{{ post.url }}">
+      <img src="{{post.cover}}" alt="{{post.title}}" />
     </a>
   </div>
   {% endif %}
@@ -102,4 +102,4 @@ layout: default
   {% endfor %}
 </div>
 </section>
-</main> 
+</main>
